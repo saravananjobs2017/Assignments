@@ -1,0 +1,80 @@
+# My First program in jupiter for ML_Ineuron
+# Sum of numbers of user inputs
+
+print('enter the numbers')
+N1 = int(input())
+N2 = int(input())
+# sum the values
+
+N3 = N1+N2
+
+print('The Total is:',N3)
+
+=============================================================
+
+#Find number which is divisible by 7 and not multiply by 5
+
+Num = range(2000,3200,1)
+for i in Num:
+    if ((i%7==0) & (i%5!=0)):
+        print(i,end=',')
+    else:
+        continue
+
+==============================================================
+
+#Accept the user's firstname and lastname then print it reverse order
+
+Frst_name,Last_name=(input().split())
+print('Firstname and lastname of the user is:',Frst_name,Last_name)
+print('Firstname and lastname of the user in reverse:',Frst_name[::-1],Last_name[::-1],end='')
+
+=====================================================================================
+
+#find the volume of a sphere with diameter 12 cm
+
+diameter = 12
+R = diameter/2
+vol = 4/3*3.14*R*R*R
+print('the volume of the sphere is:',vol)
+
+======================================================================================
+### enter sequence of comma-separated numbers from console and generate a list
+A = []
+Max_num= (input('Enter the comma separated number'))
+A.append(Max_num)
+print(A)
+
+============================================================================
+
+#print Star pattern using nested for loop
+#print star from top to bottom
+for i in range(1,6,1):
+    for j in range(i):
+        print('*',end='')
+    print("\n")
+#print star from bottom to top 
+for ii in range(4,0,-1):
+    for jj in range(ii):
+        print('*',end='')
+    print("\n")
+
+
+==========================================================
+
+#Reverse a word after accepting the input from the user
+
+str_to_rev = str(input('enter the word to reverse:',))
+print('the reverse of the word is:',str_to_rev[::-1])
+
+#note: In assignment output mentioned as 'dilGdacA' . I Hope it's printed mistakenly. please correct me if i wrong.
+
+======================================================================================================================
+
+#print the input as given sample format
+str1= 'WE, THE PEOPLE OF INDIA, having solemnly resolved to constitute India into a SOVEREIGN, SOCIALIST, SECULAR, DEMOCRATIC REPUBLIC and to secure to allits citizens'
+
+print(str1[:24],'\n\t',str1[24:87],end='!' )
+print('\n\t\t',str1[87:127],'\n\t\t\t',str1[127:])
+
+       
