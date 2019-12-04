@@ -35,7 +35,7 @@ print('Firstname and lastname of the user in reverse:',Frst_name[::-1],Last_name
 
 diameter = 12
 R = diameter/2
-vol = 4/3*3.14*R*R*R
+vol = 4/3*3.14**3
 print('the volume of the sphere is:',vol)
 
 ======================================================================================
