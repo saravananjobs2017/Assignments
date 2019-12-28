@@ -1,0 +1,39 @@
+#Write a function to compute 5/0 and use try/except to catch the exceptions.
+
+def function_one():
+    try:
+        val=5/0
+        print(val)
+    except ZeroDivisionError:
+        print('there is an error - divided by zero')
+function_one()
+
+
+============================================================================
+#Generate all sentences as output given
+
+
+subjects=["Americans ","Indians"]
+verbs=["play","watch"]
+objects=["Baseball","Cricket"]n
+for i in subjects:
+    for j in verbs:
+        for k in objects:
+            print(i+j+k)
+
+
+============================================================================
+#array produce based on Vandermonde thoerm
+
+
+import numpy as np
+def vander(x,N):
+    k=np.column_stack([x**(N-1-i) for i in range(N)])
+    print(k)
+    
+
+x = np.array([1, 2, 3, 5])
+N=3
+vander(x,N)
+
+==============================================================================
